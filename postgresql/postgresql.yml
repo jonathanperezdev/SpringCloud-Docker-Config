@@ -21,4 +21,6 @@ eureka:
   client:
     serviceUrl:
       defaultZone: ${EUREKA_SERVER:http://localhost:8761/eureka}
+example:
+  property: I AM THE DEFAULT SERVER
 
