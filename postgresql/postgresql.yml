@@ -2,7 +2,7 @@ spring:
   application:
     name: postgresql
   datasource:
-    url: jdbc:postgresql://0.0.0.0:5432/coursedb
+    url: jdbc:postgresql://db:5432/coursedb
     username: postgres
     password: mysecretpassword
   jpa:
@@ -20,7 +20,7 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: ${EUREKA_SERVER:http://localhost:8761/eureka}
+      defaultZone: ${EUREKA_SERVER:http://discovery:8761/eureka}
 example:
   property: I AM THE DEFAULT SERVER
 
