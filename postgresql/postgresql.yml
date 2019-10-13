@@ -11,8 +11,9 @@ spring:
         jdbc:
           lob:
             non_contextual_creation: true
-    hibernate:
-      ddl-auto: create
+        # Added property to avoid errors using HystrixCommand in repository
+        enable_lazy_load_no_trans: true
+        ddl-auto: create
 server:
   port: 8081
 eureka:
