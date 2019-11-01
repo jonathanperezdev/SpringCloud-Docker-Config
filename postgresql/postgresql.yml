@@ -27,3 +27,15 @@ eureka:
 example:
   property: I AM THE DEFAULT SERVER
 
+# Expose health and info endpoints to be consumed in web
+management:
+  endpoint:
+    health:
+      enabled: true
+    info:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+
