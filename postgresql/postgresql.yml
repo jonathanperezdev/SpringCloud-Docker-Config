@@ -13,7 +13,7 @@ spring:
             non_contextual_creation: true
         # Added property to avoid errors using HystrixCommand in repository
         enable_lazy_load_no_trans: true
-        ddl-auto: create
+        ddl-auto: update
 server:
   port: 8081
 eureka:
