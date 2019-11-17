@@ -25,7 +25,7 @@ eureka:
   instance:
     preferIpAddress: true
 example:
-  property: I AM THE DOCKER SERVER
+  property: I AM THE DEFAULT SERVER
 
 # Expose health and info endpoints to be consumed in web
 management:
