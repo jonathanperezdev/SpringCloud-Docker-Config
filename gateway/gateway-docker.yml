@@ -28,11 +28,6 @@ management:
 spring:
   cloud:
     gateway:
-      routes:
-        - id: prefixpath_route
-          uri: http://localhost:5555
-          filters:
-            - PrefixPath=/api
       discovery:
         locator:
           #Enabled create routes based on services registered with a DiscoveryClient
